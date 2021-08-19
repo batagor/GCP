@@ -16,7 +16,7 @@ resource "google_compute_instance" "recruitement" {
   }
 
   network_interface {
-    subnetwork = "alpha1-vpc"
+    subnetwork = "subnet-a-jakarta"
     
     # erase \\ on access_config if you want use public ip
     \\ access_config {}
