@@ -1,16 +1,20 @@
-/*module "vm_instance_1" {
-  source  = "airasia/vm_instance/google"
-  version = "2.13.0"
-  boot_disk_image = "global/images/family/centos-8"
-  instance_name = "vmapp01"
-  name_suffix = "recruitement"
-  network_tags = ["recruit-app"]
-  vpc_subnetwork = "alpha1-vpc"
-  allow_login = true
-  boot_disk_size = 20
-  create_external_ip = true
-  external_ip_name = "vmrecrutapp01pip"
-  fw_allowed_ports = ["22"]
-  machine_type = "e2-micro"
+module "app" {
+  source = "../modules/compute-engine-ip/"
+
+  count_compute = 1
+  count_start = 1
+  compute_name = "app-vm"
+  compute_type = "e2-micro"
+  compute_zones = [asia-southeast2-a]
+
+  tags_network = ["allow-icmp", "allow-ssh"]
+  images_name = "centos-8-v20210817"
+  size_root_disk = 30
+  type_root_disk = "pd-standard"
+  pub_key_file = "../pubkey/id.pub"
+  gce_ssh_user = "user"
+
+  compute_labels = {
+    "Cretedfor" = "recruitement"
+  }
 }
-*/
