@@ -1,4 +1,4 @@
-module "vm_instance_1" {
+/*module "vm_instance_1" {
   source  = "airasia/vm_instance/google"
   version = "2.13.0"
   boot_disk_image = "global/images/family/centos-8"
@@ -13,3 +13,4 @@ module "vm_instance_1" {
   fw_allowed_ports = ["22"]
   machine_type = "e2-micro"
 }
+*/
