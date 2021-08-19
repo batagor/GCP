@@ -5,7 +5,7 @@ module "app" {
   count_start = 1
   compute_name = "app-vm"
   compute_type = "e2-micro"
-  compute_zones = [asia-southeast2-a]
+  compute_zones = ["asia-southeast2-a"]
 
   tags_network = ["allow-icmp", "allow-ssh"]
   images_name = "centos-8-v20210817"
