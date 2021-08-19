@@ -23,7 +23,7 @@ variable "count_start" {
 }
 
 variable "compute_labels" {
-  type    = "map"
+  type    = map(string)
   default = {}
 }
 
