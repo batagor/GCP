@@ -14,6 +14,6 @@ module "app" {
   gce_ssh_user = "user"
 
   compute_labels = {
-    "Cretedfor" = "recruitement"
+    "cretedfor" = "recruitement"
   }
 }
