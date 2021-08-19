@@ -25,7 +25,7 @@ resource "google_compute_instance" "recruitement" {
   }
 
   # Enable if you want use metadata
-  metadata {
+  metadata = {
     sshKeys = "${var.gce_ssh_user}:${file(var.pub_key_file)}"
   }
 
