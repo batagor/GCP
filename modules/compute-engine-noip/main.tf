@@ -18,8 +18,6 @@ resource "google_compute_instance" "recruitement" {
   network_interface {
     subnetwork = "subnet-a-jakarta"
     
-    # erase \\ on access_config if you want use public ip
-    \\ access_config {}
   }
 
   # Enable if you want use metadata
