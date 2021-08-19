@@ -5,17 +5,17 @@ Please find below the server details:
 APP server
 ==========
 
-34.101.219.16__
-10.31.0.3__
-user
-(used your own ssh-key)
+34.101.219.16 <br />
+10.31.0.3 <br />
+user <br />
+(used your own ssh-key) <br />
 
 DB server
 =========
 
-10.31.0.3__
-user
-(used your own ssh-key)
+10.31.0.3 <br />
+user <br />
+(used your own ssh-key) <br />
 
 To upload your key to the server, put your ssh key to /pubkey/id.pub. Once it's modify, push it to the master and just let the github-actions take care of it. after the jobs finished and then your can continue to ssh to the app server.
 
