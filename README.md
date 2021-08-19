@@ -4,17 +4,20 @@ Please find below the server details:
 
 APP server
 ==========
-10.31.0.3
+
+34.101.219.16__
+10.31.0.3__
 user
 (used your own ssh-key)
 
 DB server
 =========
-10.31.0.3
+
+10.31.0.3__
 user
 (used your own ssh-key)
 
-To upload your key to the server, put your ssh key to /pubkey/id.pub. Once it's modify, push it to the master and just let the github-actions take care of it.
+To upload your key to the server, put your ssh key to /pubkey/id.pub. Once it's modify, push it to the master and just let the github-actions take care of it. after the jobs finished and then your can continue to ssh to the app server.
 
 1. Please install web server on APP server and pull the below code of the app.
 2. Please install mysql on the DB server.
