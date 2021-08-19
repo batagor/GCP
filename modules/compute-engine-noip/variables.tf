@@ -31,10 +31,6 @@ variable "compute_zones" {
         default = []
 }
 
-variable "tags_network" {
-	default = []
-}
-
 variable "images_name" {
 	default = ""
 }

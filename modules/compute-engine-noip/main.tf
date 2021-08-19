@@ -7,8 +7,6 @@ resource "google_compute_instance" "recruitement" {
   machine_type = "${var.compute_type}"
   zone         = "${element(var.compute_zones, count.index)}"
 
-  tags = ["${var.tags_network}"]
-
   boot_disk {
     initialize_params {
       image = "${var.images_name}"
@@ -31,9 +29,6 @@ resource "google_compute_instance" "recruitement" {
 
   # Enable if you want use labels
   labels = "${var.compute_labels}"
-    
-  
-  metadata_startup_script = "${file(var.startup_script)}"
 
   scheduling {
     on_host_maintenance = "MIGRATE"
