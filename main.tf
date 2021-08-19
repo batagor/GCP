@@ -1,5 +1,5 @@
 module "app" {
-  source = "../modules/compute-engine-ip/"
+  source = "./modules/compute-engine-ip/"
 
   count_compute = 1
   count_start = 1
@@ -11,7 +11,7 @@ module "app" {
   images_name = "centos-8-v20210817"
   size_root_disk = 30
   type_root_disk = "pd-standard"
-  pub_key_file = "../pubkey/id.pub"
+  pub_key_file = "./pubkey/id.pub"
   gce_ssh_user = "user"
 
   compute_labels = {
